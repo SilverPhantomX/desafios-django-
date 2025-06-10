@@ -1,0 +1,33 @@
+C:\Users\felip>cd C:\Tinf\programacion\proyectos\desafios_django
+
+C:\Tinf\programacion\proyectos\desafios_django>git init
+Initialized empty Git repository in C:/Tinf/programacion/proyectos/desafios_django/.git/
+
+C:\Tinf\programacion\proyectos\desafios_django>git config --global user.name "silverphantom"
+
+C:\Tinf\programacion\proyectos\desafios_django>git config --global user.email "felip.vel@hotmail.com"
+
+C:\Tinf\programacion\proyectos\desafios_django>git add .
+
+C:\Tinf\programacion\proyectos\desafios_django>git commit -m "primer desafio django - semana 1"
+[master (root-commit) 73d0b8e] primer desafio django - semana 1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 semana 1/Semana_1_Guia_Django.pdf
+
+C:\Tinf\programacion\proyectos\desafios_django>git remote add origin https://github.com/SilverPhantomX/desafios-django-.git
+
+C:\Tinf\programacion\proyectos\desafios_django>git branch -M main
+
+C:\Tinf\programacion\proyectos\desafios_django>git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 27.02 KiB | 13.51 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/SilverPhantomX/desafios-django-.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Tinf\programacion\proyectos\desafios_django>

@@ -1,0 +1,107 @@
+C:\Users\felip>python -m venv env
+
+C:\Users\felip>env\scripts\activate
+
+(env) C:\Users\felip>django-admin --version
+5.2.1
+
+(env) C:\Users\felip>django-admin starproject miweb
+No Django settings specified.
+Unknown command: 'starproject'. Did you mean startproject?
+Type 'django-admin help' for usage.
+
+(env) C:\Users\felip>django-admin startproject miweb
+
+(env) C:\Users\felip>cd miweb
+
+(env) C:\Users\felip\miweb>python manage.py runserver
+Traceback (most recent call last):
+  File "C:\Users\felip\miweb\manage.py", line 11, in main
+    from django.core.management import execute_from_command_line
+ModuleNotFoundError: No module named 'django'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\felip\miweb\manage.py", line 22, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\felip\miweb\manage.py", line 13, in main
+    raise ImportError(
+    ...<3 lines>...
+    ) from exc
+ImportError: Couldn't import Django. Are you sure it's installed and available on your PYTHONPATH environment variable? Did you forget to activate a virtual environment?
+
+(env) C:\Users\felip\miweb>python manage.py runserver
+Traceback (most recent call last):
+  File "C:\Users\felip\miweb\manage.py", line 11, in main
+    from django.core.management import execute_from_command_line
+ModuleNotFoundError: No module named 'django'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\felip\miweb\manage.py", line 22, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\felip\miweb\manage.py", line 13, in main
+    raise ImportError(
+    ...<3 lines>...
+    ) from exc
+ImportError: Couldn't import Django. Are you sure it's installed and available on your PYTHONPATH environment variable? Did you forget to activate a virtual environment?
+
+(env) C:\Users\felip\miweb>
+
+(env) C:\Users\felip\miweb>
+
+(env) C:\Users\felip\miweb>
+
+(env) C:\Users\felip\miweb>env\scripts\activate
+El sistema no puede encontrar la ruta especificada.
+
+(env) C:\Users\felip\miweb>env\Scripts\activate
+El sistema no puede encontrar la ruta especificada.
+
+(env) C:\Users\felip\miweb>pip install django
+Collecting django
+  Using cached django-5.2.1-py3-none-any.whl.metadata (4.1 kB)
+Collecting asgiref>=3.8.1 (from django)
+  Using cached asgiref-3.8.1-py3-none-any.whl.metadata (9.3 kB)
+Collecting sqlparse>=0.3.1 (from django)
+  Using cached sqlparse-0.5.3-py3-none-any.whl.metadata (3.9 kB)
+Collecting tzdata (from django)
+  Using cached tzdata-2025.2-py2.py3-none-any.whl.metadata (1.4 kB)
+Using cached django-5.2.1-py3-none-any.whl (8.3 MB)
+Using cached asgiref-3.8.1-py3-none-any.whl (23 kB)
+Using cached sqlparse-0.5.3-py3-none-any.whl (44 kB)
+Using cached tzdata-2025.2-py2.py3-none-any.whl (347 kB)
+Installing collected packages: tzdata, sqlparse, asgiref, django
+Successfully installed asgiref-3.8.1 django-5.2.1 sqlparse-0.5.3 tzdata-2025.2
+
+[notice] A new release of pip is available: 25.0.1 -> 25.1.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+(env) C:\Users\felip\miweb>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 02, 2025 - 23:59:58
+Django version 5.2.1, using settings 'miweb.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+[03/Jun/2025 00:00:45] "GET / HTTP/1.1" 200 12068
+Not Found: /favicon.ico
+[03/Jun/2025 00:00:45] "GET /favicon.ico HTTP/1.1" 404 2207
+
+(env) C:\Users\felip\miweb>python manage.py startapp principal
+
+(env) C:\Users\felip\miweb>
+
+#luego movi el entorno virtual a el repositorio local*
