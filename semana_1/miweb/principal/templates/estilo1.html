@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}mi sitio{% endblock %}</title>
+<style>
+body{
+    background-color:rgb(197, 240, 179);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+}
+h1 {
+    color: purple;
+    font-size: 60px;
+}
+h2 {
+    color : black;
+    margin-top: 20px;
+}
+p {
+    margin-top: 5px 0;
+    font-size: 16px;
+}
+table {
+    font-family: Arial, sans-serif;
+    margin-top: 15px;
+}
+th {
+    background-color: blueviolet;
+    color: white;
+}
+td, th {
+    border: 1px solid black;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: transparent;
+}
+
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>Curriculum</h1>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

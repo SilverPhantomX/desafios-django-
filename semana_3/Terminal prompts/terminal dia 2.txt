@@ -1,0 +1,670 @@
+
+C:\Users\felip>cd C:\Tinf\programacion\proyectos\desafios_django\semana_1
+
+C:\Tinf\programacion\proyectos\desafios_django\semana_1>dir
+ El volumen de la unidad C es Windows
+ El número de serie del volumen es: 1CDF-7B43
+
+ Directorio de C:\Tinf\programacion\proyectos\desafios_django\semana_1
+
+03-06-2025  00:15    <DIR>          .
+18-06-2025  20:17    <DIR>          ..
+16-06-2025  20:28    <DIR>          capturas
+09-06-2025  19:28    <DIR>          miweb
+02-06-2025  23:14            29.094 Semana_1_Guia_Django.pdf
+               1 archivos         29.094 bytes
+               4 dirs  320.188.653.568 bytes libres
+
+C:\Tinf\programacion\proyectos\desafios_django\semana_1>cd C:\Tinf\programacion\proyectos\desafios_django\semana_1\miweb
+
+C:\Tinf\programacion\proyectos\desafios_django\semana_1\miweb>env\scripts\activate
+
+(env) C:\Tinf\programacion\proyectos\desafios_django\semana_1\miweb>code .
+
+(env) C:\Tinf\programacion\proyectos\desafios_django\semana_1\miweb>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 20, 2025 - 18:00:55
+Django version 5.2.1, using settings 'miweb.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+[20/Jun/2025 18:01:04] "GET / HTTP/1.1" 200 446
+Not Found: /favicon.ico
+[20/Jun/2025 18:01:04] "GET /favicon.ico HTTP/1.1" 404 3214
+^C
+(env) C:\Tinf\programacion\proyectos\desafios_django\semana_1\miweb>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 20, 2025 - 18:01:55
+Django version 5.2.1, using settings 'miweb.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+[20/Jun/2025 18:01:59] "GET / HTTP/1.1" 200 446
+^C
+(env) C:\Tinf\programacion\proyectos\desafios_django\semana_1\miweb>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 20, 2025 - 18:16:55
+Django version 5.2.1, using settings 'miweb.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Tinf\programacion\proyectos\desafios_django\semana_1\miweb\principal\views.py", line 16, in inicio
+    return render(request, 'index.html', contexto)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 519, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 540, in extend_nodelist
+    raise self.error(
+    ...<2 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: {% extends 'base.html' %} must be the first tag in 'index.html'.
+[20/Jun/2025 18:16:59] "GET / HTTP/1.1" 500 128072
+^C
+(env) C:\Tinf\programacion\proyectos\desafios_django\semana_1\miweb>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 20, 2025 - 18:18:24
+Django version 5.2.1, using settings 'miweb.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+[20/Jun/2025 18:18:27] "GET / HTTP/1.1" 200 556
+[20/Jun/2025 18:18:27] "GET /static/img/akuaku.jpg HTTP/1.1" 404 1856
+^C
+(env) C:\Tinf\programacion\proyectos\desafios_django\semana_1\miweb>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 20, 2025 - 18:21:07
+Django version 5.2.1, using settings 'miweb.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+[20/Jun/2025 18:21:12] "GET / HTTP/1.1" 200 556
+[20/Jun/2025 18:21:12] "GET /static/img/akuaku.jpg HTTP/1.1" 200 35477
+C:\Tinf\programacion\proyectos\desafios_django\semana_1\miweb\principal\views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 20, 2025 - 18:33:26
+Django version 5.2.1, using settings 'miweb.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+C:\Tinf\programacion\proyectos\desafios_django\semana_1\miweb\principal\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 20, 2025 - 18:41:41
+Django version 5.2.1, using settings 'miweb.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+^C
+(env) C:\Tinf\programacion\proyectos\desafios_django\semana_1\miweb>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 20, 2025 - 18:41:57
+Django version 5.2.1, using settings 'miweb.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+[20/Jun/2025 18:42:05] "GET / HTTP/1.1" 200 665
+[20/Jun/2025 18:42:05] "GET /static/img/akuaku.jpg HTTP/1.1" 304 0
+[20/Jun/2025 18:42:27] "GET /curriculum HTTP/1.1" 301 0
+Internal Server Error: /curriculum/
+Traceback (most recent call last):
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Tinf\programacion\proyectos\desafios_django\semana_1\miweb\principal\views.py", line 19, in currilulum
+    return render(request, "curriculum.html")
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 567, in invalid_block_tag
+    raise self.error(
+    ...<8 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 13: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[20/Jun/2025 18:42:27] "GET /curriculum/ HTTP/1.1" 500 164960
+^C
+(env) C:\Tinf\programacion\proyectos\desafios_django\semana_1\miweb>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 20, 2025 - 18:44:41
+Django version 5.2.1, using settings 'miweb.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+[20/Jun/2025 18:45:22] "GET / HTTP/1.1" 200 665
+[20/Jun/2025 18:45:22] "GET /static/img/akuaku.jpg HTTP/1.1" 304 0
+Internal Server Error: /curriculum/
+Traceback (most recent call last):
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Tinf\programacion\proyectos\desafios_django\semana_1\miweb\principal\views.py", line 19, in curriculum
+    return render(request, "curriculum.html")
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 567, in invalid_block_tag
+    raise self.error(
+    ...<8 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 13: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[20/Jun/2025 18:45:40] "GET /curriculum/ HTTP/1.1" 500 164960
+^C
+(env) C:\Tinf\programacion\proyectos\desafios_django\semana_1\miweb>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 20, 2025 - 18:49:02
+Django version 5.2.1, using settings 'miweb.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+Internal Server Error: /curriculum/
+Traceback (most recent call last):
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Tinf\programacion\proyectos\desafios_django\semana_1\miweb\principal\views.py", line 19, in curriculum
+    return render(request, "curriculum.html")
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 567, in invalid_block_tag
+    raise self.error(
+    ...<8 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 13: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[20/Jun/2025 18:49:04] "GET /curriculum/ HTTP/1.1" 500 165105
+^C
+(env) C:\Tinf\programacion\proyectos\desafios_django\semana_1\miweb>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 20, 2025 - 18:50:04
+Django version 5.2.1, using settings 'miweb.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+Internal Server Error: /curriculum/
+Traceback (most recent call last):
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Tinf\programacion\proyectos\desafios_django\semana_1\miweb\principal\views.py", line 19, in curriculum
+    return render(request, "curriculum.html")
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\felip\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\template\base.py", line 567, in invalid_block_tag
+    raise self.error(
+    ...<8 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 12: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[20/Jun/2025 18:50:11] "GET /curriculum/ HTTP/1.1" 500 165071
+^C
+(env) C:\Tinf\programacion\proyectos\desafios_django\semana_1\miweb>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 20, 2025 - 18:54:54
+Django version 5.2.1, using settings 'miweb.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+[20/Jun/2025 18:54:58] "GET /curriculum/ HTTP/1.1" 200 1001
+[20/Jun/2025 18:54:58] "GET /static/img/gato.jpg HTTP/1.1" 200 6500
+^C
+(env) C:\Tinf\programacion\proyectos\desafios_django\semana_1\miweb>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 20, 2025 - 19:03:19
+Django version 5.2.1, using settings 'miweb.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+[20/Jun/2025 19:03:23] "GET /curriculum/ HTTP/1.1" 200 1097
+[20/Jun/2025 19:03:23] "GET /static/img/gato.jpg HTTP/1.1" 304 0
+^C
+(env) C:\Tinf\programacion\proyectos\desafios_django\semana_1\miweb>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 20, 2025 - 19:04:28
+Django version 5.2.1, using settings 'miweb.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+[20/Jun/2025 19:04:34] "GET /curriculum/ HTTP/1.1" 200 608
+[20/Jun/2025 19:06:19] "GET /curriculum/ HTTP/1.1" 200 1097
+[20/Jun/2025 19:12:05] "GET /curriculum/ HTTP/1.1" 200 1115
+[20/Jun/2025 19:12:05] "GET /static/img/gato.jpg HTTP/1.1" 304 0
+[20/Jun/2025 19:13:17] "GET /curriculum/ HTTP/1.1" 200 1173
+[20/Jun/2025 19:17:50] "GET /curriculum/ HTTP/1.1" 200 1194
+[20/Jun/2025 19:17:50] "GET /static/img/gato.jpg HTTP/1.1" 304 0
+[20/Jun/2025 19:26:12] "GET /curriculum/ HTTP/1.1" 200 1331
+[20/Jun/2025 19:26:12] "GET /static/img/gato.jpg HTTP/1.1" 304 0
+[20/Jun/2025 19:47:22] "GET /curriculum/ HTTP/1.1" 200 2299
+[20/Jun/2025 19:47:22] "GET /static/img/gato.jpg HTTP/1.1" 304 0
+[20/Jun/2025 19:48:26] "GET /curriculum/ HTTP/1.1" 200 2330
+[20/Jun/2025 19:52:42] "GET /curriculum/ HTTP/1.1" 200 2395
+[20/Jun/2025 19:53:17] "GET /curriculum/ HTTP/1.1" 200 2396
+[20/Jun/2025 19:53:19] "GET /curriculum/ HTTP/1.1" 200 2396
+[20/Jun/2025 19:53:20] "GET /curriculum/ HTTP/1.1" 200 2396
+[20/Jun/2025 19:53:20] "GET /curriculum/ HTTP/1.1" 200 2396
+[20/Jun/2025 19:53:21] "GET /curriculum/ HTTP/1.1" 200 2396
+[20/Jun/2025 19:53:21] "GET /curriculum/ HTTP/1.1" 200 2396
+[20/Jun/2025 19:53:40] "GET /curriculum/ HTTP/1.1" 200 2395
+[20/Jun/2025 19:53:42] "GET /curriculum/ HTTP/1.1" 200 2395
+[20/Jun/2025 19:54:16] "GET /curriculum/ HTTP/1.1" 200 2394
+[20/Jun/2025 20:00:44] "GET /curriculum/ HTTP/1.1" 200 2402
+[20/Jun/2025 20:00:44] "GET /static/img/gato1.jpeg HTTP/1.1" 200 84331
+[20/Jun/2025 20:02:20] "GET /curriculum/ HTTP/1.1" 200 2402
+[20/Jun/2025 20:02:20] "GET /static/img/gato1.jpeg HTTP/1.1" 304 0
+[20/Jun/2025 20:03:00] "GET /curriculum/ HTTP/1.1" 200 2408
+[20/Jun/2025 20:03:00] "GET /static/img/gato1.jpeg HTTP/1.1" 304 0
+[20/Jun/2025 20:03:31] "GET /curriculum/ HTTP/1.1" 200 2407
+[20/Jun/2025 20:03:31] "GET /static/img/gato1.jpeg HTTP/1.1" 304 0
+[20/Jun/2025 20:09:29] "GET /curriculum/ HTTP/1.1" 200 2618
+[20/Jun/2025 20:09:29] "GET /static/img/gato1.jpeg HTTP/1.1" 304 0
+[20/Jun/2025 20:15:39] "GET /curriculum/ HTTP/1.1" 200 2659
+[20/Jun/2025 20:15:39] "GET /static/img/gato1.jpeg HTTP/1.1" 304 0
+[20/Jun/2025 20:16:44] "GET /curriculum/ HTTP/1.1" 200 2655
+[20/Jun/2025 20:21:49] "GET /curriculum/ HTTP/1.1" 200 3082
+[20/Jun/2025 20:21:49] "GET /static/img/gato1.jpeg HTTP/1.1" 304 0
+[20/Jun/2025 20:49:00] "GET /curriculum/ HTTP/1.1" 200 3082
+[20/Jun/2025 20:49:00] "GET /static/img/gato2.jpeg HTTP/1.1" 200 33992
+[20/Jun/2025 20:50:00] "GET /curriculum/ HTTP/1.1" 200 3082
+[20/Jun/2025 20:50:00] "GET /static/img/gato2.jpeg HTTP/1.1" 304 0
+[20/Jun/2025 20:53:30] "GET /curriculum/ HTTP/1.1" 200 2774
+[20/Jun/2025 20:53:30] "GET /static/img/gato2.jpeg HTTP/1.1" 304 0
+[20/Jun/2025 20:53:37] "GET /curriculum/ HTTP/1.1" 200 2774
+[20/Jun/2025 20:53:39] "GET /curriculum/? HTTP/1.1" 200 2774
+[20/Jun/2025 20:53:57] "GET /curriculum/? HTTP/1.1" 200 2774
+[20/Jun/2025 20:53:58] "GET /curriculum/? HTTP/1.1" 200 2774
+[20/Jun/2025 20:54:01] "GET /curriculum/? HTTP/1.1" 200 2774
+[20/Jun/2025 20:54:01] "GET /curriculum/? HTTP/1.1" 200 2774
+[20/Jun/2025 20:54:01] "GET /curriculum/? HTTP/1.1" 200 2774
+[20/Jun/2025 20:54:02] "GET /curriculum/? HTTP/1.1" 200 2774
+[20/Jun/2025 20:55:27] "GET /curriculum/? HTTP/1.1" 200 2855
+[20/Jun/2025 20:55:27] "GET /static/img/gato2.jpeg HTTP/1.1" 304 0
+[20/Jun/2025 20:55:30] "GET /curriculum/? HTTP/1.1" 200 2855
+[20/Jun/2025 20:56:40] "GET /curriculum/? HTTP/1.1" 200 2855
+[20/Jun/2025 20:56:40] "GET /static/img/gato2.jpeg HTTP/1.1" 304 0
+[20/Jun/2025 20:56:46] "GET /curriculum/? HTTP/1.1" 200 2855
+[20/Jun/2025 21:00:13] "GET /curriculum/? HTTP/1.1" 200 2760
+[20/Jun/2025 21:00:13] "GET /static/img/gato2.jpeg HTTP/1.1" 304 0
+[20/Jun/2025 21:01:31] "GET /curriculum/? HTTP/1.1" 200 2796
+[20/Jun/2025 21:01:31] "GET /static/img/gato2.jpeg HTTP/1.1" 304 0
+[20/Jun/2025 21:10:07] "GET /curriculum/? HTTP/1.1" 200 3045
+[20/Jun/2025 21:10:07] "GET /static/img/gato2.jpeg HTTP/1.1" 304 0
+[20/Jun/2025 21:12:02] "GET /curriculum/? HTTP/1.1" 200 3049
+[20/Jun/2025 21:13:06] "GET /curriculum/? HTTP/1.1" 200 3057
+[20/Jun/2025 21:13:06] "GET /static/img/gato2.jpeg HTTP/1.1" 304 0
+[20/Jun/2025 21:21:43] "GET /curriculum/? HTTP/1.1" 200 3543
+[20/Jun/2025 21:21:43] "GET /static/img/gato2.jpeg HTTP/1.1" 304 0
+[20/Jun/2025 21:25:08] "GET /curriculum/? HTTP/1.1" 200 3527
+[20/Jun/2025 21:25:08] "GET /static/img/gato2.jpeg HTTP/1.1" 304 0
+[20/Jun/2025 21:25:10] "GET /curriculum/? HTTP/1.1" 200 3527
+[20/Jun/2025 21:25:11] "GET /curriculum/? HTTP/1.1" 200 3527
+[20/Jun/2025 21:26:12] "GET /curriculum/? HTTP/1.1" 200 3589
+[20/Jun/2025 21:26:41] "GET /curriculum/? HTTP/1.1" 200 3567
+[20/Jun/2025 21:26:42] "GET /curriculum/? HTTP/1.1" 200 3567
+[20/Jun/2025 21:26:43] "GET /curriculum/? HTTP/1.1" 200 3567
+[20/Jun/2025 21:26:52] "GET /curriculum/?email=vmcamposb%40gmail.com&info=on HTTP/1.1" 200 3567
+[20/Jun/2025 21:29:13] "GET /curriculum/?email=vmcamposb%40gmail.com&info=on HTTP/1.1" 200 3560
+[20/Jun/2025 21:29:13] "GET /static/img/gato2.jpeg HTTP/1.1" 304 0
+[20/Jun/2025 21:29:26] "GET /curriculum/?email=vmcamposb%40gmail.com&info=on HTTP/1.1" 200 3560
+[20/Jun/2025 21:31:11] "GET /curriculum/?email=vmcamposb%40gmail.com&info=on HTTP/1.1" 200 3482
+[20/Jun/2025 21:32:10] "GET /curriculum/?email=vmcamposb%40gmail.com&info=on HTTP/1.1" 200 3136
+[20/Jun/2025 21:34:55] "GET /curriculum/?email=vmcamposb%40gmail.com&info=on HTTP/1.1" 200 3152
+[20/Jun/2025 21:34:55] "GET /static/img/gato2.jpeg HTTP/1.1" 304 0
+[20/Jun/2025 21:34:56] "GET /curriculum/?email=vmcamposb%40gmail.com&info=on HTTP/1.1" 200 3152
+[20/Jun/2025 21:36:47] "GET /curriculum/?email=vmcamposb%40gmail.com&info=on HTTP/1.1" 200 3145
+[20/Jun/2025 21:37:10] "GET /curriculum/?email=vmcamposb%40gmail.com&info=on&info=on&info=on HTTP/1.1" 200 3145
+[20/Jun/2025 21:38:22] "GET /curriculum/?email=vmcamposb%40gmail.com&info=on&info=on&info=on HTTP/1.1" 200 3142
+[20/Jun/2025 21:38:54] "GET /curriculum/?email=vmcamposb%40gmail.com&info=on&info=on&info=on HTTP/1.1" 200 3143
+[20/Jun/2025 21:42:09] "GET /curriculum/?email=vmcamposb%40gmail.com&info=on&info=on&info=on HTTP/1.1" 200 3127
+[20/Jun/2025 21:42:09] "GET /static/img/gato2.jpeg HTTP/1.1" 304 0
+[20/Jun/2025 21:42:15] "GET /curriculum/?email=vmcamposb%40gmail.com&info=on&info=on HTTP/1.1" 200 3127
+[20/Jun/2025 21:44:56] "GET /curriculum/?email=vmcamposb%40gmail.com&info=on&info=on HTTP/1.1" 200 3134
+[20/Jun/2025 21:47:19] "GET / HTTP/1.1" 200 661
+[20/Jun/2025 21:47:20] "GET /static/img/akuaku.jpg HTTP/1.1" 304 0
+[20/Jun/2025 21:49:47] "GET /curriculum/? HTTP/1.1" 200 3133
+[20/Jun/2025 21:49:47] "GET /static/img/gato2.jpeg HTTP/1.1" 304 0
+[20/Jun/2025 21:49:51] "GET /curriculum/ HTTP/1.1" 200 3133
+[20/Jun/2025 21:50:46] "GET / HTTP/1.1" 200 835
+[20/Jun/2025 21:51:22] "GET / HTTP/1.1" 200 847
+[20/Jun/2025 21:51:41] "GET / HTTP/1.1" 200 847
+[20/Jun/2025 21:52:14] "GET /curriculum/ HTTP/1.1" 200 3141
+[20/Jun/2025 21:52:32] "GET /curriculum/ HTTP/1.1" 200 3141
+

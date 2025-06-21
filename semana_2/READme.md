@@ -1,6 +1,6 @@
 
 
-voy a subir el progreso github y tambien adjuntar los 
+voy a subir el progreso a github y tambien adjuntar los 
 archivos solicitado (los 2 urls.py y views.py) a la entrga
 de la semana.
 https://github.com/SilverPhantomX/desafios-django-

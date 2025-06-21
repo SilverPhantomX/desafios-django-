@@ -10,3 +10,10 @@ def saludo_nombre(request,nombre):
 
 def edad(request,edad):
     return HttpResponse(f"tienes {edad}")
+
+def inicio(request):
+    contexto = {"nombre": "Felipe"}
+    return render(request, 'index.html', contexto)
+
+def curriculum(request):
+    return render(request, "curriculum.html")

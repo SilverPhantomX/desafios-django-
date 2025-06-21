@@ -1,0 +1,85 @@
+{% extends 'estilo1.html' %}
+{% load static %}
+{% block title %}Curriculum Vitae{% endblock %}
+
+{% block content %}
+<h2>Felipe Velasquez</h2>
+<img src="{% static 'img/gato2.jpeg' %}" alt="Foto CV" style="max-width: 200px; margin-top: 15px; border-radius: 50%;">
+<p>
+    Soy un estudiante de Técnico Universitario en Informática con experiencia en reposición,<br>ventas y atención al cliente. Me apasiona la tecnología y busco seguir creciendo en áreas como<br>programación, redes y soporte técnico.
+</p>
+<h2>Experiencia</h2>
+<table border="1" cellspacing="0" cellpadding="8" style="border-collapse: collapse; width: 25%;">
+    <thead style="background-color: whitesmoke;">
+        <tr>
+            <th>Año</th>
+            <th>empresa</th>
+            <th>ocupacion</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>2020</td>
+            <td>Prontodoc</td>
+            <td>Asistente de veterinaria</td>
+        </tr>
+        <tr>
+            <td>2021 - 2023</td>
+            <td>Preunic</td>
+            <td>Bodeguero</td>
+        </tr>
+        <tr>
+            <td>2024</td>
+            <td>Unimarc</td>
+            <td>Cajero</td>
+        </tr>
+        <tr>
+            <td>2025</td>
+            <td>Universidad Catolica de Temuco</td>
+            <td>estudiante</td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    <a href="https://www.youtube.com/watch?v=9J62hGda9BQ" target="_blank" style="color: blue; text-decoration: underline;">
+        mira este video ahora!, es muy importante que lo veas entero
+    </a>
+</p>
+<h2>Por favor, contesta esta breve encuesta</h2>
+<form
+<label for="email">Correo: </label>
+<input type="email" id="email" name="email" required>
+<label><br><br>
+<!--label de elecion 1-->
+<label>
+        <input type="radio" name="info" required>
+        Quiero recibir información por correo
+    </label><br>
+
+    <label>
+        <input type="radio" name="info">
+        No deseo recibir correos
+    </label><br><br>
+
+<!--fin label de elecion 1-->
+
+<!--label de elecion 2-->
+<h2>donde escuchaste de nosotros</h2>
+<label>
+        <input type="checkbox" name="info">
+        facebook
+    </label><br>
+    <label>
+        <input type="checkbox" name="info">
+        instagram
+    </label><br>
+
+    <label>
+        <input type="checkbox" name="info">
+        Un amigo
+    </label><br><br>
+
+    <button type="submit">Enviar</button>
+<!--fin label de elecion 2-->
+</form>
+{% endblock %}
