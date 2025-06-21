@@ -668,3 +668,130 @@ For more information on production servers see: https://docs.djangoproject.com/e
 [20/Jun/2025 21:52:14] "GET /curriculum/ HTTP/1.1" 200 3141
 [20/Jun/2025 21:52:32] "GET /curriculum/ HTTP/1.1" 200 3141
 
+(env) C:\Tinf\programacion\proyectos\desafios_django\semana_1\miweb>cd C:\Tinf\programacion\proyectos\desafios_django\
+
+(env) C:\Tinf\programacion\proyectos\desafios_django>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    semana 1/Semana_1_Guia_Django.pdf
+        deleted:    semana 1/capturas/navegador.png
+        deleted:    semana 1/capturas/python y git instalado.png
+        deleted:    semana 1/capturas/terminal entorno virtual.txt
+        deleted:    semana 1/capturas/terminal git repositorio.txt
+        deleted:    semana 1/capturas/terminal2.txt
+        deleted:    semana 1/miweb/db.sqlite3
+        deleted:    semana 1/miweb/manage.py
+        deleted:    semana 1/miweb/miweb/__init__.py
+        deleted:    semana 1/miweb/miweb/__pycache__/__init__.cpython-313.pyc
+        deleted:    semana 1/miweb/miweb/__pycache__/settings.cpython-313.pyc
+        deleted:    semana 1/miweb/miweb/__pycache__/urls.cpython-313.pyc
+        deleted:    semana 1/miweb/miweb/__pycache__/wsgi.cpython-313.pyc
+        deleted:    semana 1/miweb/miweb/asgi.py
+        deleted:    semana 1/miweb/miweb/settings.py
+        deleted:    semana 1/miweb/miweb/urls.py
+        deleted:    semana 1/miweb/miweb/wsgi.py
+        deleted:    semana 1/miweb/principal/__init__.py
+        deleted:    semana 1/miweb/principal/__pycache__/__init__.cpython-313.pyc
+        deleted:    semana 1/miweb/principal/__pycache__/admin.cpython-313.pyc
+        deleted:    semana 1/miweb/principal/__pycache__/apps.cpython-313.pyc
+        deleted:    semana 1/miweb/principal/__pycache__/models.cpython-313.pyc
+        deleted:    semana 1/miweb/principal/__pycache__/urls.cpython-313.pyc
+        deleted:    semana 1/miweb/principal/__pycache__/views.cpython-313.pyc
+        deleted:    semana 1/miweb/principal/admin.py
+        deleted:    semana 1/miweb/principal/apps.py
+        deleted:    semana 1/miweb/principal/migrations/__init__.py
+        deleted:    semana 1/miweb/principal/migrations/__pycache__/__init__.cpython-313.pyc
+        deleted:    semana 1/miweb/principal/models.py
+        deleted:    semana 1/miweb/principal/tests.py
+        deleted:    semana 1/miweb/principal/urls.py
+        deleted:    semana 1/miweb/principal/views.py
+        deleted:    semana-2/READme.md
+        deleted:    semana-2/Semana_2_Guia_Django.pdf
+        deleted:    semana-2/semana 2 consola git bash.txt
+        deleted:    semana-2/urls_Miweb.py
+        deleted:    semana-2/urls_app.py
+        deleted:    semana-2/views.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        semana_1/
+        semana_2/
+        semana_3/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+(env) C:\Tinf\programacion\proyectos\desafios_django>git add .
+
+(env) C:\Tinf\programacion\proyectos\desafios_django>git commit -m "semana 3"
+[main 4725eba] semana 3
+ 53 files changed, 1421 insertions(+), 1 deletion(-)
+ delete mode 100644 semana 1/miweb/principal/__pycache__/urls.cpython-313.pyc
+ delete mode 100644 semana 1/miweb/principal/__pycache__/views.cpython-313.pyc
+ rename {semana 1 => semana_1}/Semana_1_Guia_Django.pdf (100%)
+ create mode 100644 semana_1/capturas/estilos.html
+ rename {semana 1 => semana_1}/capturas/navegador.png (100%)
+ rename {semana 1 => semana_1}/capturas/python y git instalado.png (100%)
+ rename {semana 1 => semana_1}/capturas/terminal entorno virtual.txt (100%)
+ rename {semana 1 => semana_1}/capturas/terminal git repositorio.txt (100%)
+ rename {semana 1 => semana_1}/capturas/terminal2.txt (100%)
+ rename {semana 1 => semana_1}/miweb/db.sqlite3 (100%)
+ rename {semana 1 => semana_1}/miweb/manage.py (100%)
+ rename {semana 1 => semana_1}/miweb/miweb/__init__.py (100%)
+ rename {semana 1 => semana_1}/miweb/miweb/__pycache__/__init__.cpython-313.pyc (100%)
+ rename {semana 1 => semana_1}/miweb/miweb/__pycache__/settings.cpython-313.pyc (100%)
+ rename {semana 1 => semana_1}/miweb/miweb/__pycache__/urls.cpython-313.pyc (94%)
+ rename {semana 1 => semana_1}/miweb/miweb/__pycache__/wsgi.cpython-313.pyc (100%)
+ rename {semana 1 => semana_1}/miweb/miweb/asgi.py (100%)
+ rename {semana 1 => semana_1}/miweb/miweb/settings.py (100%)
+ rename {semana 1 => semana_1}/miweb/miweb/urls.py (100%)
+ rename {semana 1 => semana_1}/miweb/miweb/wsgi.py (100%)
+ rename {semana 1 => semana_1}/miweb/principal/__init__.py (100%)
+ rename {semana 1 => semana_1}/miweb/principal/__pycache__/__init__.cpython-313.pyc (100%)
+ rename {semana 1 => semana_1}/miweb/principal/__pycache__/admin.cpython-313.pyc (100%)
+ rename {semana 1 => semana_1}/miweb/principal/__pycache__/apps.cpython-313.pyc (100%)
+ rename {semana 1 => semana_1}/miweb/principal/__pycache__/models.cpython-313.pyc (100%)
+ create mode 100644 semana_1/miweb/principal/__pycache__/urls.cpython-313.pyc
+ create mode 100644 semana_1/miweb/principal/__pycache__/views.cpython-313.pyc
+ rename {semana 1 => semana_1}/miweb/principal/admin.py (100%)
+ rename {semana 1 => semana_1}/miweb/principal/apps.py (100%)
+ rename {semana 1 => semana_1}/miweb/principal/migrations/__init__.py (100%)
+ rename {semana 1 => semana_1}/miweb/principal/migrations/__pycache__/__init__.cpython-313.pyc (100%)
+ rename {semana 1 => semana_1}/miweb/principal/models.py (100%)
+ create mode 100644 semana_1/miweb/principal/static/img/akuaku.jpg
+ create mode 100644 semana_1/miweb/principal/static/img/gato.jpg
+ create mode 100644 semana_1/miweb/principal/static/img/gato1.jpeg
+ create mode 100644 semana_1/miweb/principal/static/img/gato2.jpeg
+ create mode 100644 semana_1/miweb/principal/templates/base.html
+ create mode 100644 semana_1/miweb/principal/templates/curriculum.html
+ create mode 100644 semana_1/miweb/principal/templates/estilo1.html
+ create mode 100644 semana_1/miweb/principal/templates/index.html
+ rename {semana 1 => semana_1}/miweb/principal/tests.py (100%)
+ rename {semana 1 => semana_1}/miweb/principal/urls.py (66%)
+ rename {semana-2 => semana_1/miweb/principal}/views.py (65%)
+ rename {semana-2 => semana_2/Python Files}/urls_Miweb.py (100%)
+ rename {semana-2 => semana_2/Python Files}/urls_app.py (100%)
+ rename {semana 1/miweb/principal => semana_2/Python Files}/views.py (100%)
+ rename {semana-2 => semana_2}/READme.md (92%)
+ rename {semana-2 => semana_2}/Semana_2_Guia_Django.pdf (100%)
+ rename {semana-2 => semana_2/Terminal prompts}/semana 2 consola git bash.txt (100%)
+ create mode 100644 semana_3/Capturas/Captura de pantalla 2025-06-20 220325.png
+ create mode 100644 semana_3/Capturas/Captura de pantalla 2025-06-20 220419.png
+ create mode 100644 semana_3/Terminal prompts/terminal dia 1.txt
+ create mode 100644 semana_3/Terminal prompts/terminal dia 2.txt
+
+(env) C:\Tinf\programacion\proyectos\desafios_django>git push
+Enumerating objects: 67, done.
+Counting objects: 100% (67/67), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (64/64), done.
+Writing objects: 100% (66/66), 547.22 KiB | 15.20 MiB/s, done.
+Total 66 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (5/5), done.
+To https://github.com/SilverPhantomX/desafios-django-.git
+   ba9f348..4725eba  main -> main
+
+(env) C:\Tinf\programacion\proyectos\desafios_django>
